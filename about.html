@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViVi's Blog</title>
+    <link rel="stylesheet" href="css/entirety.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <!-- 页眉，每个页面页眉相同，分为左右两部分及header_1和header_2 -->
+    <header class="header">
+        <div class="header_1">
+            <img src="images/photo.JPG" class="head_photo" onmouseover="this.src='images/photo.JPG'"
+                onmouseout="this.src='images/photo.JPG'" />
+            <div class="header_1_1">Hello,I'm<span style="color:black;font-size:1.4em;"> ViVi</span></div>
+        </div>
+        <div class="header_2">
+            <div class="line_1">愿你一生清澈明朗</div>
+            <div class="line_2">所求遂所愿</div>
+            <div class="line_3">做想做之事,爱想爱之人</div>
+            <div class="line_4">----丰子恺</div>
+        </div>
+    </header>
+    <!-- Navigation-->
+    <!-- 导航栏，每个页面导航栏相同 -->
+    <nav class="nav">
+        <div class="nav_name"><a href="home.html">ViVi</a></div>
+        <ul class="clearfix">
+            <li><a href="messageboard.html">留言板</a> </li>
+            <li><a href="thoughts.html">碎言碎语</a></li>
+            <li><a href="study.html">学无止境</a></li>
+            <li><a href="about.html">关于我</a></li>
+            <li><a href="index.html">首页</a></li>
+        </ul>
+    </nav>
+    <!-- Content -->
+    <!-- 内容区都有一个公共类inner，固定宽度，用于放置主要内容 -->
+    <!-- container_2又分为左右两个部分，左为边栏container_2_l,右为简历主要内容container_2_r -->
+    <div class="container_2">
+        <div class="inner">
+            <div class="container_2_l">
+                <!--照片-->
+                <div class="resume_photo"><img src="images/resume_photo.JPG"
+                        style="width: 120px;height: 150px;border: 4px solid grey;"></div>
+                <!--基本信息-->
+                <div class="basic_inf">
+                    <div><span style="color: black;">NAME</span>&emsp;杨薇</div>
+                    <div><span style="color: black;">AGE</span>&emsp;20</div>
+                    <div><span style="color: black;">TEL</span>&emsp;13476667686</div>
+                    <div><span style="color: black;">ADDRESS</span>&emsp;湖北省武汉市洪山区</div>
+                    <div><span style="color: black;">EMAIL</span>&emsp;2587457041@qq.com</div>
+                </div>
+                <!--个人技能-->
+                <div class="resume_skill">
+                    <div class="skill_title">SKILL</div>
+                    <div class="skill_1">C++</div>
+                    <br>
+                    <div class="skill_2">Java</div>
+                    <br>
+                    <div class="skill_3">Sql</div>
+                    <br>
+                    <div class="skill_4">Python</div>
+                    <br>
+                    <div class="skill_5">Html/Css</div>
+                </div>
+                <!--兴趣爱好-->
+                <div class="resume_hobby">
+                    <div class="hobby_title">HOBBY</div>
+                    <div class="hobby_1" style="color: white;">阅读</div>
+                    <div class="hobby_2">羽毛球</div>
+                    <div class="hobby_3" style="color: white;">吉他</div>
+                    <div class="hobby_4">跑步</div>
+                </div>
+            </div>
+            <!-- End of container_2_l -->
+            <div class="container_2_r">
+                <!--姓名、求职意向-->
+                <div class="resume_head">
+                    <h1>杨薇</h1>
+                    <h2>求职意向：Java工程师</h2>
+                </div>
+                <!-- 教育背景 -->
+                <div class="resume_text_1">
+                    <div class="resume_text_tit">教育背景</div>
+                    <div class="line_1" style="border: solid 1px #b7c2c2;;margin-left: 25px;"></div>
+                    <br>
+                    <div class="resume_text_1_1">
+                        <div class="resume_time">2018.09-至今&emsp;&emsp;&emsp;中南财经政法大学&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;信息管理与信息系统（本科）</div>
+                        <div>主修课程</div>
+                        <div>高等数学，线性代数，概率论，离散数学等公共基础课；C,C++,Java,Python,数据结构，操作系统，数据库概论，数据库管理实务，
+                            设计模式与UML，Web前端开发，计算机网络,管理学，会计学等专业课。</div>
+                    </div>
+                </div>
+                <!-- 在校经历 -->
+                <div class="resume_text_2">
+                    <div class="resume_text_tit">在校经历</div>
+                   <div class="line_1" style="border: solid 1px #b7c2c2;;margin-left: 25px;"></div>
+                   <br>
+                    <div class="resume_text_1_1">2018.9-2019.9任院志协活动运营部干事，参与举办各类志愿活动<br>
+                        获得2018-2019学年优秀学生一等奖学金<br>
+                        获2018-2019学年“三好学生”称号<br>
+                        第29届博文杯立项并成功结项<br>
+                        积极参与中南杯、博文杯、全国大学生创新创业大赛等各种赛事</div>
+                </div>
+                <!-- 技能证书 -->
+                <div class="resume_text_3">
+                    <div class="resume_text_tit">技能证书</div>
+                   <div class="line_1" style="border: solid 1px #b7c2c2;;margin-left: 25px;"></div>
+                   <br>
+                    <div class="resume_text_1_1">
+                        熟悉Java编程，C++编程，并对Sql、Python、Web等有所了解<br>
+                        计算机二级证书，熟练掌握Office使用<br>
+                        大学英语四级通过，英语能力良好
+                    </div>
+                </div>
+                <!-- 自我评价 -->
+                <div class="resume_text_4">
+                    <div class="resume_text_tit">自我评价</div>
+                   <div class="line_1" style="border: solid 1px #b7c2c2;;margin-left: 25px;"></div>
+                   <br>
+                    <div class="resume_text_1_1">
+                        本人做事稳重，责任心强，善与沟通，有较强的组织能力和团队精神。对待学习和工作态度认真，性格乐观向上，能承受学习和工作中的压力。适应能力强、勤奋好学，勇于迎接挑战。
+                        在专业课方面接受了大学基础教育，具备一定的专业知识和素养。
+                    </div>
+                </div>
+            </div>
+            <!-- End of container_2_r -->
+        </div>
+    </div>
+    <!-- End of container_2 -->
+     <!-- Footer -->
+      <!-- 页尾，每个页面都有相同页尾 -->
+     <footer class="footer">
+        <div class="inner">
+            <h2>ViVi<span style="color:white; font-size: large;">'S</span> Blog</h2>
+            <br>
+            <p>CopyRight© ViVi All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+
+</html>

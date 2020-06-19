@@ -1,0 +1,61 @@
+/* 该页面整体色调为黑白色 */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+htmi,body{
+    width: 100%;
+    height: 100%;
+}
+/* 设置了一个星空黑的背景图片 */
+body {
+    background-image: url("../images/bodybg.JPG") ;
+    background-size: 100%;
+    line-height: 1.25;
+}
+
+.content .main-title{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    color: black;
+    text-align: center;
+    top: 30%;
+    left: 42%;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    font-family: "微软雅黑";
+    font-size: 4em;
+    box-sizing: border-box;
+}
+.content .main-title .main-title_1{
+    font-size: 20px;
+}
+
+/* 该页面的导航栏 */
+.home_nav{
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    top: 70%;
+}
+.home_nav .home_nav_1{
+    text-align: center;
+}
+.home_nav .home_nav_1 a{
+    display: inline-block;
+    color:#f3eded;
+    cursor: pointer;
+    margin: 0.35em 0.1em;
+    padding: 0.5em 1.2em;
+    outline: none;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 700;
+    border-radius: 2px;
+    font-size: 110%;
+}
+.home_nav .home_nav_1 a:hover{
+    border: 2px solid;
+}

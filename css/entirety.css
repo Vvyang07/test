@@ -1,0 +1,796 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+    list-style-type: none;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: url(../images/bodybg.JPG) repeat-y;
+    background-size: 100%;
+}
+
+.inner {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 页眉区的CSS */
+.header {
+    width: 1000px;
+    height: 170px;
+    background-color: #b7c2c2;
+    margin: 0 auto;
+}
+.header .header_1{
+	float:left;
+	height:100%;
+	width:50%;
+	line-height:140px;
+	font-size:2.3em;
+	color:white;
+	font-weight:800;
+}
+.header .header_1 .head_photo {    
+    -webkit-border-radius: 110px;
+    border-radius: 110px;
+    width:80px;
+    height:80px;
+    box-shadow:0 0 0 4px #fff;
+    float:left;
+    margin-left:30px;
+    margin-top: 40px;
+}
+.header .header_1 .header_1_1{
+	margin-left:20px;
+	float:left;
+}
+.header .header_2{
+	height:100%;
+	width:50%;
+	float:right;
+	line-height:30px;
+	padding-top:10px;
+}
+.header .header_2 div{
+	width:90%;
+	text-align:right;
+	margin-right:50px;
+	color:white;
+}
+/* 导航区 */
+.nav{
+    width: 1000px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #121d1f;
+    border-radius: 0px;
+}
+.nav .nav_name a{
+    display: block;
+    float: left;
+    color: white;
+    font-size: 25px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.nav ul li {
+    list-style-type:none;
+    float:right; 
+    color:white;
+    height:45px;
+    width:100px;
+    text-align:center;
+    line-height:50px;
+}
+.nav a {
+    text-decoration: none;
+    color: white;
+}
+.nav a:hover {
+    color: #b7c2c2;
+}
+
+/* 主要内容区的CSS */
+.container_0 .inner .photo_box {
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 2px #e3e9e9;
+}
+.container_0 .inner .photo_box img {
+    width: 800px;
+    height: 400px;
+    position: absolute;
+    float: left;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.container_0 .inner .photo_box img:first-child{
+    animation: switch 9s linear 0s infinite;
+}
+.container_0 .inner .photo_box img:nth-child(2){
+    animation: switch 9s linear 3s infinite;
+}
+.container_0 .inner .photo_box img:nth-child(3){
+    animation: switch 9s linear 6s infinite;
+}
+
+@keyframes switch {
+    0%{opacity: 1;}
+    25%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.container_1 {
+    height: 940px;
+}
+.container_1 .inner {
+    height: 940px;
+}
+.container_1 .inner .cont_1 {
+    width: 1000px;
+    height: 300px;
+    margin-top: 20px;
+}
+.container_1 .inner .cont_1 .cont_1_l {
+    width: 500px;
+    height: 300px;
+    float: left; 
+}
+.container_1 .inner .cont_1 .cont_1_r {
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    float: right;
+}
+.container_1 .inner .cont_2 {
+    width: 1000px;
+    height: 300px;
+    margin-top: 20px;
+}
+.container_1 .inner .cont_2 .cont_2_l {
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    float: left;
+}
+.container_1 .inner .cont_2 .cont_2_r {
+    width: 500px;
+    height: 300px;
+    float: right;
+}
+.container_1 .inner .cont_3 {
+    width: 1000px;
+    height: 300px;
+    margin-top: 20px;
+}
+.container_1 .inner .cont_3 .cont_3_l {
+    width: 500px;
+    height: 300px;
+    float: left;
+}
+.container_1 .inner .cont_3 .cont_3_r {
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    float: right;
+}
+/* 文字部分公共样式 */
+.main_cont {
+    padding: 35px;
+}
+.main_cont h2 {
+    color: black;
+    font-size: 24px;
+    text-align: center;
+}
+.main_cont .idea {
+    margin-top: 20px;
+    color: black;
+    line-height: 1.8;
+}
+
+/* 页脚区CSS */
+.footer {
+    margin-top: 25px;
+}
+.footer .inner{
+    height: 100px;
+    background: #b7c2c2;
+}
+.footer .inner h2 {
+    text-align: center;
+    padding-top: 15px;
+}
+.footer .inner p {
+    text-align: center;
+}
+
+/* “关于我”页面的主要内容部分 */
+.container_2 {
+    height: 900px;
+    margin-top: 20px;
+}
+.container_2 .inner {
+    height: 900px;
+}
+.container_2 .inner .container_2_l {
+    width: 270px;
+    float: left;
+    background-color:  #b7c2c2;
+    height: 900px;
+}
+.container_2 .inner .container_2_l .resume_photo{
+    width: 100px;
+    height: 120px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container_2 .inner .container_2_l .basic_inf {
+    margin-top: 70px;
+    margin-left: 40px;
+    color: white;
+    font-size: 15px;
+    line-height: 2;
+}
+.container_2 .inner .container_2_l .resume_skill {
+    margin-top: 50px;
+    margin-left: 40px;
+}
+.container_2 .inner .container_2_l .resume_skill .skill_title {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.container_2 .inner .container_2_l .resume_skill .skill_1 {
+    width: 120px;
+    background-color:white;
+}
+.container_2 .inner .container_2_l .resume_skill .skill_2 {
+    width: 140px;
+    background-color:white;
+}
+.container_2 .inner .container_2_l .resume_skill .skill_3 {
+    width: 100px;
+    background-color:white;
+}
+.container_2 .inner .container_2_l .resume_skill .skill_4 {
+    width: 120px;
+    background-color:white;
+}
+.container_2 .inner .container_2_l .resume_skill .skill_5 {
+    width: 100px;
+    background-color:white;
+}
+.container_2 .inner .container_2_l .resume_hobby {
+    margin-top: 50px;
+    margin-left: 40px;
+    line-height: 1.5;
+}
+.container_2 .inner .container_2_l .resume_hobby .hobby_title {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+/* 个人简历表右边部分 */
+.container_2 .inner .container_2_r {
+    width: 730px;
+    float: right;
+    background-color: white;
+    height: 900px;
+}
+.container_2 .inner .container_2_r .resume_head {
+    margin-top: 50px;
+    margin-left: 30px;
+}
+.container_2 .inner .container_2_r .resume_head h1 {
+    color: gray;
+    line-height: 1.5;
+}
+.container_2 .inner .container_2_r .resume_head h2 {
+    color: #b7c2c2;
+}
+/* 简历中第一个主要部分 */
+.container_2 .inner .container_2_r .resume_text_1 {
+    height: auto;
+    margin-top: 55px;
+}
+/* 四个部分标题和内容CSS相同的部分 */
+.container_2 .inner .container_2_r .resume_text_tit {
+    margin-left: 35px;
+    font-size: 25px;
+    font-weight: bold;
+    color:  gray;
+}
+.container_2 .inner .container_2_r .resume_text_1_1 {
+    margin-left: 30px;
+}
+/* 简历中第二个主要部分 */
+.container_2 .inner .container_2_r .resume_text_2 {
+    height: auto;
+    margin-top: 35px;
+}
+/* 简历中第三个主要部分 */
+.container_2 .inner .container_2_r .resume_text_3 {
+    height: auto;
+    margin-top: 35px;
+}
+/* 简历中第四个主要部分 */
+.container_2 .inner .container_2_r .resume_text_4 {
+    height: auto;
+    margin-top: 35px;
+}
+
+.footer {
+    margin-top: 25px;
+}
+.footer .inner{
+    height: 100px;
+    background: #b7c2c2;
+}
+.footer .inner h2 {
+    text-align: center;
+    padding-top: 15px;
+}
+.footer .inner p {
+    text-align: center;
+}
+
+/* 页面4书籍推荐部分 */
+.container_3 {
+    height: 620px;
+}
+/* 标题 */
+.container_3 .inner .container_3_title {
+    font-size: 24px;
+    text-align: center;
+    color: black;
+    margin-top: 10px;
+}
+.container_3 .inner .container_3_content {
+    display: block;
+    padding-top: 15px;
+}
+/* 书籍推荐部分公共CSS */
+.container_3 .inner .container_3_content li {
+    display: list-item;
+    width: 30%;
+    height: 535px;
+    float: left;
+}
+.container_3 .inner .container_3_content .book_1_1 {
+    position: relative;
+    text-align: center;
+    height: 280px;
+}
+.container_3 .inner .container_3_content .book_1_1 .book_decoration {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    border: 10px solid black;/*边框左上为黑色右下为灰色 */
+    border-right-color:gray;
+    border-bottom-color: gray;
+    border-radius: 50%;
+}
+.container_3 .inner .container_3_content .book_1_1 .book_img {
+    position: absolute;
+    top: 10px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -125px;
+    right: 0;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+.container_3 .inner .container_3_content .book_1_1 .book_img img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%; /*使图片呈现为圆形边框*/
+    opacity: 0.5;
+}
+.container_3 .inner .container_3_content .book_1_1 .book_img_text {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    width: 250px;
+    height: 250px;
+    margin-left: -125px;
+}
+/* 书名的CSS */
+.container_3 .inner .container_3_content .book_1_1 .book_img_text h1 {
+    margin: 80px 45px 0 45px;
+    line-height: 40px;
+    font-size: 25px;
+    color: black;
+    border-bottom: 1px solid #ffffff;
+}
+/* 作者的CSS */
+.container_3 .inner .container_3_content .book_1_1 .book_img_text h2{
+    color: #b7b7b7;
+    font-size: 18px;
+    line-height: 35px;
+    font-style: italic;
+}
+.container_3 .inner .container_3_content .book_1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 4.5%;
+    background-color: rgb(241, 237, 237);
+    border:  solid 1.5px #b7b7b7;
+}
+.container_3 .inner .container_3_content .book_2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 4.5%;
+    background-color: rgb(241, 237, 237);
+    border:  solid 1.5px #b7b7b7;
+}
+.container_3 .inner .container_3_content .book_3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(241, 237, 237);
+    border:  solid 1.5px #b7b7b7;
+}
+/* 书评部分的三个共同的CSS */
+.container_3 .inner .container_3_content .book_1_2 {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 15px;
+}
+/* 页面“学无止境”第二大部分container_4的CSS */
+.container_4 {
+    margin-top: 50px;
+    height: 680px;
+}
+.container_4 .inner {
+    height: 680px;
+}
+.container_4 .inner .classic_book {
+    width: 208px;
+    height: 400px;
+    margin-top: 120px;
+    display: inline-block;
+}
+.container_4 .inner .classic_book .book_box {
+    width: 208px;
+    height: 80px;
+    border-bottom: 1px black dashed;
+}
+.container_4 .inner .classic_book .book_box_img{
+    width: 50px;
+    height: 70px;
+    margin-right: 8px;
+    float: left;
+}
+.container_4 .inner .classic_book .book_box_text {
+    width: auto;
+    margin-top: 20px;
+    float: left;
+}
+.container_4 .inner .classic_book .box_1 {
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(26, 25, 25);
+}
+.container_4 .inner .classic_book .box_2 {
+    font-size: 13px;
+    font-weight: lighter;
+    float: left;
+    color: gray;
+}
+/* 页面“学无止境”表格的CSS */
+.container_4 .inner .table_box {
+    width: 680px;
+    height: 680px;
+    float: right;
+}
+.container_4 .inner .table_box .table_title {
+    line-height: 2;
+    font-size: 25px;
+    font-weight: bold;
+    border-bottom: solid 1.5px black;
+    margin-bottom: 20px;
+    color: gray;
+}
+table {
+    width: 680px;
+    border: solid #fff;
+    border-width: 1px 0px 0px 1px;
+    background: #e3e9e9;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+  tbody{
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+td {
+    width:266.4px;
+    height: 30px;
+    border: solid #fff;
+    border-width: 0px 1px 1px 0px;
+    padding: 2px 10px;
+    display: table-cell;
+    vertical-align: inherit;
+}
+td.td_1 {
+    width: 30%;
+}
+td.td_2 {
+    width: 30%;
+}
+td.td_3 {
+    width: 40%;
+}
+
+/* 页面“碎言碎语”的CSS */
+.container_5 {
+    height: 2180px;
+    margin-top: 50px;
+}
+.container_5 .inner .container_5_title .container_5_title_1 {
+    font-size: 25px;
+    font-weight: bold;
+    color: gray;
+    line-height: 2;
+}
+.container_5 .inner .container_5_title .container_5_title_2 {
+    font-size: 15px;
+    font-style: italic;
+}
+/* 页面“碎言碎语”左边部分的CSS */
+.container_5 .inner .container_5_l {
+    width: 710px;
+    margin-top: 20px;
+    float: left;
+    height: 1100px;
+}
+.container_5 .inner .container_5_l .container_5_l_1 {
+    width: 710px;
+    height: 550px;
+    margin-top: 20px;
+    border: 1px gray solid;
+    background-color: white;
+}
+.container_5 .inner .container_5_l .container_5_l_1 .container_5_l_1_img {
+    width: 710px;
+    height: 400px;
+    margin-bottom: 20px;
+}
+.container_5 .inner .container_5_l .container_5_l_1 .container_5_l_1_text {
+    width: 690px;
+    height: 150px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+.container_5 .inner .container_5_l .container_5_l_1 .container_5_l_1_text .container_5_l_1_text_title {
+    font-size: 25px;
+    font-weight: bold;
+    color: gray;
+    letter-spacing: 5px;
+    margin-bottom: 5px;
+}
+.container_5 .inner .container_5_l .container_5_l_2 {
+    width: 710px;
+    height: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px gray solid;
+}
+.container_5 .inner .container_5_l .container_5_l_2 .container_5_l_2_p {
+    width: 710px;
+    height: 400px;
+    overflow: hidden;
+}
+.container_5 .inner .container_5_l .container_5_l_2 .container_5_l_2_p .big_p {
+    width: 2130px;
+    animation: switch_2 5s ease-out infinite;
+}
+.container_5 .inner .container_5_l .container_5_l_2 .container_5_l_2_p .big_p img{
+    width: 710px;
+    height: 400px;
+    float: left;
+}
+.container_5 .inner .container_5_l .container_5_l_2 .container_5_l_2_t {
+    width: auto;
+    height: 70px;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color:rgb(184, 179, 179);
+}
+@keyframes switch_2 {
+    0%,25%{
+        margin-left: 0;
+    }
+    35%,60%{
+        margin-left: -710px;
+    }
+    70%,100%{
+        margin-left: -1420px;
+    }
+}
+/* 页面“碎言碎语”右边部分的CSS */
+.container_5 .inner .container_5_r {
+    width: 280px;
+    margin-top: 70px;
+    float: right;
+    height: 400px;
+}
+.container_5 .inner .container_5_r .thoughts_photo_box {
+    width: 280px;
+    height: 50px;
+    margin-top: 15px;
+    border-bottom: 1px gray dashed;
+}
+.container_5 .inner .container_5_r .thoughts_photo_box .photo_box_img{
+    width: 70px;
+    height: 50px;
+    margin-right: 10px;
+    float: left;
+}
+.container_5 .inner .container_5_r .thoughts_photo_box .photo_box_text {
+    width: auto;
+    margin-top: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    color: gray;
+    float: left;
+}
+.container_5 .inner .container_5_r .thoughts_photo_box .photo_box_text .box_1{
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(179, 165, 184);
+}
+.container_5 .inner .container_5_r .thoughts_photo_box .photo_box_text  .box_2 {
+    font-size: 13px;
+    font-weight: lighter;
+    float: left;
+    color: gray;
+}
+/* 页面“碎言碎语”下面部分的CSS */
+.container_5 .inner .container_5_b {
+    width: 1000px;
+    height: 1000px;
+    float: left;
+}
+.container_5 .inner .container_5_b .container_5_b_1 {
+    width: 1000px;
+    height: 550px;
+}
+.container_5 .inner .container_5_b .container_5_b_1_l {
+    width: 280px;
+    height: 550px;
+    margin-right: 60px;
+    margin-left: 20px;
+    float: left;
+}
+/* 三个部分的图片和文字CSS相同 */
+.container_5 .inner .container_5_b .container_5_b_1_l_p1{
+    width: 280px;
+    height: 250px;
+} 
+.container_5 .inner .container_5_b .container_5_b_1_l_p2{
+    width: 280px;
+    height: 250px;
+} 
+/* 设置鼠标悬停放大 */
+.container_5 .inner .container_5_b img{
+    opacity: 1;
+    transform: scale(1);
+    transition: transform 1s ease 0s;
+} 
+.container_5 .inner .container_5_b img:hover{
+    opacity: 0.8;
+    transform: scale(1.1);
+    transition: transform 1s ease 0s;
+} 
+.container_5 .inner .container_5_b .container_5_b_1_l_t{
+    text-align: center;
+    height: 40px;
+    font-size: 20px;
+}
+.container_5 .inner .container_5_b .container_5_b_1_m {
+    width: 280px;
+    height: 550px;
+    margin-right: 60px;
+    float: left;
+}
+.container_5 .inner .container_5_b .container_5_b_1_r {
+    width: 280px;
+    height: 550px;
+    margin-right: 20px;
+    float: left;
+}
+.container_5 .inner .container_5_b .container_5_b_2 {
+    width: 1000px;
+    height: 350px;
+    float: left;
+    margin-top: 20px;
+    background-color: white;
+}
+.container_5 .inner .container_5_b .container_5_b_2 .container_5_b_2_p{
+    width: 400px;
+    height: 350px;
+    float: left;
+}
+.container_5 .inner .container_5_b .container_5_b_2 .container_5_b_2_t{
+    width: 600px;
+    height: 350px;
+    float: left;
+}
+.container_5 .inner .container_5_b .container_5_b_2 .container_5_b_2_t .tit{
+    margin-top: 50px;
+    margin-left: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    color: grey;
+}
+.container_5 .inner .container_5_b .container_5_b_2 .container_5_b_2_t .main_text{
+    margin-top: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 1.5;
+}
+
+/* 页面“留言板”部分的CSS */
+form#box {
+    width: 800px;
+    margin-top: 20px;
+    margin-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+form#box textarea{
+    width: 800px;
+    margin-top: 10px;
+}
+form#box h3 {
+        text-align: center;
+        line-height: 25px;
+        font-family: "微软雅黑";
+        font-size: 20px;
+}
+/* “全部留言”的CSS */
+#li {
+    display: block;
+    border-bottom: 1px dashed #ebebeb;
+    margin-top: 12px;
+    padding: 8px 0;
+}
+
+
+
+
+
+
+
+
+    

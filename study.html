@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViVi's Blog</title>
+    <link rel="stylesheet" href="css/entirety.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <!-- 页眉，每个页面页眉相同，分为左右两部分及header_1和header_2 -->
+    <header class="header">
+        <div class="header_1">
+            <img src="images/photo.JPG" class="head_photo" onmouseover="this.src='images/photo.JPG'"
+                onmouseout="this.src='images/photo.JPG'" />
+            <div class="header_1_1">Hello,I'm<span style="color:black;font-size:1.4em;"> ViVi</span></div>
+        </div>
+        <div class="header_2">
+            <div class="line_1">愿你一生清澈明朗</div>
+            <div class="line_2">所求遂所愿</div>
+            <div class="line_3">做想做之事,爱想爱之人</div>
+            <div class="line_4">----丰子恺</div>
+        </div>
+    </header>
+    <!-- Navigation-->
+    <!-- 导航栏，每个页面导航栏相同 -->
+    <nav class="nav">
+        <div class="nav_name"><a href="home.html">ViVi</a></div>
+        <ul>
+            <li><a href="messageboard.html">留言板</a> </li>
+            <li><a href="thoughts.html">碎言碎语</a></li>
+            <li><a href="study.html">学无止境</a></li>
+            <li><a href="about.html">关于我</a></li>
+            <li><a href="index.html">首页</a></li>
+        </ul>
+    </nav>
+    <!-- Content -->
+    <!-- 内容区都有一个公共类inner，固定宽度，用于放置主要内容 -->
+    <!-- “学无止境”页面第一个大部分container_3，又分为两个部分，标题container_3_title 和主要内容container_3_content-->
+    <div class="container_3">
+        <div class="inner">
+            <h1 class="container_3_title">Favorite Books</h1>
+            <ul class="container_3_content">
+                <li class="book_1">
+                    <div class="book_1_1">
+                        <div class="book_decoration"></div>
+                        <div class="book_img">
+                            <img src="images/book_1.JPG">
+                        </div>
+                        <div class="book_img_text">
+                            <h1>百年孤独</h1>
+                            <h2>马尔克斯</h2>
+                        </div>
+                    </div>
+                    <div class="book_1_2">
+                        <p class="book_text">
+                            &emsp;&emsp;《百年孤独》是魔幻现实主义文学的代表作，描写了布恩迪亚家族七代人的传奇故事，
+                            以及加勒比海沿岸小镇马孔多的百年兴衰，反映了拉丁美洲一个世纪以来风云变幻的历史。
+                            作品融入神话传说、民间故事、宗教典故等神秘因素，巧妙地糅合了现实与虚幻，
+                            展现出一个瑰丽的想象世界，成为20世纪最重要的经典文学巨著之一。
+                        </p>
+                    </div>
+                </li>
+                <li class="book_2">
+                    <div class="book_1_1">
+                        <div class="book_decoration"></div>
+                        <div class="book_img">
+                            <img src="images/book_2.JPG">
+                        </div>
+                        <div class="book_img_text">
+                            <h1>平凡的世界</h1>
+                            <h2>路遥</h2>
+                        </div>
+                    </div>
+                    <div class="book_1_2">
+                        <p class="book_text">
+                            &emsp;&emsp;生活不能等待别人来安排，要自已去争取和奋斗；
+                            而不论其结果是喜是悲，但可以慰藉的是，你总不枉在这世界上活了一场。
+                            有了这样的认识，你就会珍重生活，而不会玩世不恭；
+                            同时，也会给人自身注入一种强大的内在力量。 --路遥 《平凡的世界》
+                        </p>
+                    </div>
+                </li>
+                <li class="book_3 ">
+                    <div class="book_1_1">
+                        <div class="book_decoration"></div>
+                        <div class="book_img">
+                            <img src="images/book_3.JPG">
+                        </div>
+                        <div class="book_img_text">
+                            <h1>活着</h1>
+                            <h2>余华</h2>
+                        </div>
+                    </div>
+                    <div class="book_1_2">
+                        <p class="book_text">
+                            &emsp;&emsp;《活着》是从一个旁听者的角度，描述出一个普通人平凡而又曲折的一生。
+                            主人公福贵生活中混乱又特殊的时代，经历了战争和杀戮，以及动荡的生活。
+                            这本书并不是告诉我们需要如何去活，而是告诉我们活着应有的态度，拿书中主人公的话说，活着，好好活着。
+                            我们无法更改生命的随意抛弃，面对各种不同的遭遇，只能默默去忍受，只能无力的感慨。
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- End of container_3 -->
+    <!-- “学无止境”页面第二个大部分，又分为两个主要部分，边栏书目classic_book和计算机专业推荐书目的表格table_box -->
+    <div class="container_4">
+        <div class="inner">
+            <div class="classic_book">
+                <div class="book_box">
+                    <div class="book_box_img"><img src="images/classicbook1.JPG" style="width: 50px;height: 70px;"></div>
+                    <div class="book_box_text">
+                        <div class="box_1">C++程序设计</div>
+                        <div class="box_2">谭浩强</div>
+                    </div>
+                </div>
+                <div class="book_box">
+                    <div class="book_box_img"><img src="images/classicbook2.JPG" style="width: 50px;height: 70px;"></div>
+                    <div class="book_box_text">
+                        <div class="box_1">计算机网络</div>
+                        <div class="box_2">谢仁希</div>
+                    </div>
+                </div>
+                <div class="book_box">
+                    <div class="book_box_img"><img src="images/classicbook3.JPG" style="width: 50px;height: 70px;"></div>
+                    <div class="book_box_text">
+                        <div class="box_1">Linux/Unix系统编程</div>
+                        <div class="box_2">Michale Kerrisk</div>
+                    </div>
+                </div>
+                <div class="book_box">
+                    <div class="book_box_img"><img src="images/classicbook4.JPG" style="width: 50px;height: 70px;"></div>
+                    <div class="book_box_text">
+                        <div class="box_1">鸟哥的Linux私房菜</div>
+                        <div class="box_2">鸟哥</div>
+                    </div>
+                </div>
+            </div> 
+            <div class="table_box">
+                <div class="table_title">计算机专业推荐书籍</div>
+                <table width="100%" cellspacing="0" cellpadding="8" border="0">
+                    <tbody>
+                        <tr colspan="3" height="32" bgcolor="gray">
+                            <td class="td_1"><strong>书籍名称</strong></td>
+                            <td class="td_2"><strong>作者</strong></td>
+                            <td class="td_3"><strong>主要内容</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="td_1">《信号与系统》</td>
+                            <td class="td_2">Alan V.Oppenheim</td>
+                            <td class="td_3">涉及到信号与系统分析的基本理论基本分析方法及其应用</td>
+                        </tr>
+                        <tr>
+                            <td class="td_1">《新机器的灵魂》</td>
+                            <td class="td_2">Tracy Kidder</td>
+                            <td class="td_3">完整地记录下了当时一家公司齐心协力把一种新的小型计算机推向市场的过程中所发生的一系列故事 </td>
+                        </tr>
+                        <tr>
+                            <td class="td_1">《HTTP权威指南》</td>
+                            <td class="td_2">David Gourley等</td>
+                            <td class="td_3">对一些常见的误解进行了说明，推荐了“各种使用诀窍”</td>
+                        </tr>
+                        <tr>
+                            <td class="td_1">《鸟哥的Linux的私房菜》</td>
+                            <td class="td_2">鸟哥</td>
+                            <td class="td_3">初学者学习Linux不可多得的一本入门好书，全面而详细地介绍了Linux操作系统</td>
+                        </tr>
+                        <tr>
+                            <td class="td_1">《深入理解计算机系统》</td>
+                            <td class="td_2">Randal E.Bryant等</td>
+                            <td class="td_3">为程序员描述计算机系统的实现细节，帮助其在大脑中构造一个层次型的计算机系统</td>
+                        </tr>
+                        <tr>
+                            <td class="td_1">《实现模式》</td>
+                            <td class="td_2"> Kent Beck</td>
+                            <td class="td_3">非常有益的面向对象编程经验谈</td>
+                        </tr>
+                        <tr>
+                            <td class="td_1">《Unix 编程艺术》</td>
+                            <td class="td_2">Eric S. Raymond </td>
+                            <td class="td_3">阐述软件设计的原则与方法， 很有参考价值， 要读懂的话需要一定的功力和经验</td>
+                        </tr>
+                        <tr>
+                            <td class="td_1">《精通正则表达式》</td>
+                            <td class="td_2">Jeffrey E.F.Friedl </td>
+                            <td class="td_3">正则表达式的深入学习读物。详细阐述了正则的原理和优化</td>
+                        </tr>
+                        <tr>
+                            <td class="td_1">《软件工艺》</td>
+                            <td class="td_2">Pete McBreen </td>
+                            <td class="td_3">从工艺角度论述软件开发，强调个人开发能力的修炼</td>
+                        </tr>
+                        <tr>
+                            <td class="td_1">《时间管理：给系统管理员》</td>
+                            <td class="td_2">Thomas A.Limoncelli </td>
+                            <td class="td_3">关于时间管理方面的有益参考，短小而精</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- End of container_4 -->
+    <!-- Footer -->
+    <!-- 页尾，每个页面都有相同页尾 -->
+    <footer class="footer">
+        <div class="inner">
+            <h2>ViVi<span style="color:white; font-size: large;">'S</span> Blog</h2>
+            <br>
+            <p>CopyRight© ViVi All Rights Reserved</p>
+        </div>
+    </footer> 
+</body>
+
+</html>
